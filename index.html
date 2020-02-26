@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>JavaScript gyakorlás</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header" class="display-4">JavaScript gyakorlás</div>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">0.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írja ki konzolba a megnyitott ablak magasságát.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution0">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit" onclick="tryitout();">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">1.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írassa ki a számokat 0-tól 100-ig.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution1">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit" onclick="firstFunction();">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">2.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írassa ki 0-tól 200-ig a páros számokat
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution2">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit" onclick="secondFunction_v2();">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">3.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írasd ki 0-tól 100-ig a 3-mal és 7-tel osztható számokat.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution3">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit" onclick="thirdFunction_v1();">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">4.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írasd ki az első 5 darab 9-cel osztható számot.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution4">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="bigDiv5">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">5.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Állítsátok be ennek a divnek a hátterét zöldre.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution5">
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit" onclick="fifthFunction();">Mehet</button> 
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="bigDiv6">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">6.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Állítsuk be ennek a divnek a háttérszínét véletlenszerűen kékre zöldre vagy pirosra.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution6">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron" id="bigDiv7">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">7.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Állítsuk be ennek a divnek a színét teljesen véletlenszerűen.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution7">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">8.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Irassuk ki egy egyes színtű címsorba, hogy "Epstein didn't kill himself"
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution8">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit" onclick="eightFunction();">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">9.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írassuk ki a számokat 100-tól 1-ig csökkenő sorrendben úgy, hogy minden 2-vel osztható szám szöveg színe legyen kék, minden 3-mal osztható szám színe legyen kék, és minden 6-tal osztható szám színe legyen lila.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution9">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit">Mehet</button>
+                </div>
+            </div>
+        </div>
+        <h2>Új nap új feladatok</h2>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">10.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írassa ki a consoleba a (-3)-tól 3-ig a számok önmagukkal vett hányadosát.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p id="solution10">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit">Mehet</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-1">
+                    <div class="display-4">11.</div>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <p class="exercise">
+                            Írassa ki a beviteli mezőben található szám négyzetét. 
+                        </p>
+                    </div>
+                    <div class="row">
+                        <input type="text" id="enKisSzamom">
+                    </div>
+                    <div class="row">
+                        <p id="solution11">
+                            <!-- Ide jön majd a megoldás! -->
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary" type="submit">Mehet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

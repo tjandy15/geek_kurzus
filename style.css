@@ -1,0 +1,13 @@
+body{
+
+}
+
+#header {
+    text-align: center;
+    padding: 10px;
+}
+
+.exercise{
+    font-weight: bold;
+    margin-left: 32px;
+}
